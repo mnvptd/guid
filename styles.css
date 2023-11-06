@@ -1,0 +1,99 @@
+body {
+    font-family: system-ui;
+    background-color: #09161c;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#generateButton {
+    font-family: Consolas, Courier New;
+    background-color: #09161d;
+    font-size: 100%;
+    color: #ffffff;
+    border: none;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#copyButton {
+    font-family: Consolas, Courier New;
+    background-color: #09161d;
+    font-size: 100%;
+    color: #ffffff;
+    border: none;
+    width: 150px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.guid-container {
+    font-family: Consolas, Courier New;
+    width: 450px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.guid-container label {
+    font-weight: bold;
+    margin-right: 10px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #09161d;
+}
+
+#guidDisplay {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: all;
+    display: inline-block;
+    width: 350px; //
+    white-space: nowrap; //
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #09161d;
+    text-align: left;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: transparent;
+    }
+    5% {
+        background-color: lightgray;
+        border-radius: 25px;
+    }
+}
+
+#guidDisplay.selected {
+    animation: highlight 1s;
+}
