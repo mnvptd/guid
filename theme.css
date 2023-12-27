@@ -1,0 +1,35 @@
+body {
+    font-family: system-ui;
+    font-size: 105%;
+    padding-left: 23px;
+    background-color: #09161c;
+    color: rgba(255,255,255,.5);
+    }
+
+theme {
+  opacity: 0.7;
+  width: 20px;
+  height: 100%;
+  position: fixed;
+  left: 0px; 
+  top: 0px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+  color: rgb(113, 170, 235);
+  font-weight: bold;
+  background: none;
+  border: 1px;
+  border-style: none;
+  border-right-style: solid;
+}
+
+.light-theme {
+    background-color: white;
+    color: black;
+}
+
+.dark-theme {
+    background-color: #09161c;
+    color: rgba(255,255,255,.5);
+}
